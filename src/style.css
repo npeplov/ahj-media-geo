@@ -1,0 +1,107 @@
+body {
+  padding: 5px 20px;
+}
+
+h1, h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.widget {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.chat {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #212529;
+  max-height: 400px;
+  min-height: 400px;
+}
+
+.conversations {
+  flex-grow: 1;
+  padding: 17px 22px;
+  display: block;
+  overflow: auto;
+}
+
+.conversations div {
+  border: 1px solid #aaa;
+  padding: 5px 20px 12px 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.conversations p {
+  color: #212529;
+}
+
+.conversations span {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.chat form {
+  width: 100%;
+}
+
+.chat input {
+  width: 100%;
+  margin-right: 7px;
+  padding: 10px 20px;
+  border: none;
+  border-top: 1px solid #aaa;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.modal {
+  border: 1px solid #aaa;
+  padding: 12px 20px 17px 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.modal p {
+  margin: 10px 0;
+}
+
+.modal form {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 330px;
+}
+
+.modal input {
+  font-family: 'Open Sans', sans-serif;
+  padding: 1px 5px 4px 7px;
+  width: 150px;
+}
+
+.modal input:invalid {
+  color: red;
+  border-color: red;
+}
+
+.modal button {
+  padding: 0.23rem 10px;
+  width: 75px;
+}
+
+.modal .tooltip {
+  color: red;
+}

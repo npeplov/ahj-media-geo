@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>#10 GEO, Media</title>
+</head>
+<body>
+  <h1>AHJ #10 GEO, Media</h1>
+  <h2>Text notes with GPS</h2>
+  <div class="widget">
+    
+    <div class="chat">
+      <div class="conversations">
+      </div>
+      <form action="submit">
+        <input type="text" placeholder="Type something here">
+      </form>
+    </div>
+
+    <div class="modal hidden">
+      <p>Site can't get your location, please enter GPS coordinates manually</p>
+      <p>Latitude & longitude comma separated. [57.62607, 39.88447]</p>
+      <form action="submit" novalidate>
+        <input type="text" name="gps" placeholder="[57.62607, 39.88447]">
+        <!-- pattern="\[{0,}\d{2}\.\d{5},\s{0,}\d{2}\.\d{5}\]{0,}" -->
+        <button type="reset">Cancel</button>
+        <button type="submit">Ok</button>
+      </form>
+      <div class="tooltip"></div>
+    </div>
+
+  </div>
+</body>
+</html>
